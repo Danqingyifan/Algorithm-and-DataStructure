@@ -1,7 +1,7 @@
 #include<vector>
 class Solution {
 public:
-    int findDuplicate(std::vector<int>& nums)
+    int FindDuplicate(std::vector<int>& nums)
     {
 
     }
