@@ -18,7 +18,7 @@ public:
         {
             if (charMap.count(s[right]) == 0 || charMap[s[right]] < left)
             {
-                charMap[s[right]] = right;
+                charMap[s[right]] = right; // update the index of the character
                 maxLength = max(maxLength, right - left + 1);
             }
             else
