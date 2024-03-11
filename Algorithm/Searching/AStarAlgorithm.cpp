@@ -64,3 +64,9 @@ void aStarSearch(std::vector<std::vector<int>> &graph, Point start, Point goal)
 }
 
 // 路径成本与启发式函数的值都被考虑,启发式函数起到了一个指导作用，帮助算法更快地找到目标。
+
+// references:
+// https://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
+// https://www.redblobgames.com/pathfinding/a-star/introduction.html
+// https://developer.aliyun.com/article/685477
+// https://www.redblobgames.com/pathfinding/a-star/implementation.html#algorithm
