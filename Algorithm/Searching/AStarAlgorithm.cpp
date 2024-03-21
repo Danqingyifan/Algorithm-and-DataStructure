@@ -1,7 +1,7 @@
 #include <queue>
 #include <unordered_map>
 #include <vector>
-
+using namespace std;
 // Pair to represent points on the graph
 using Point = std::pair<int, int>;
 
