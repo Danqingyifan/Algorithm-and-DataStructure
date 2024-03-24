@@ -9,15 +9,19 @@ using namespace std;
 class Solution
 {
 public:
-    
     vector<vector<int>> subsets(vector<int> &nums)
     {
-        vector<vector<int>> result;
-        vector<int> temp = {};
-        result.push_back(temp);
-        if (nums.size() == 0)
+        vector<vector<int>> result{{}};
+        for (int num : nums)
         {
-            return result;
+            int n = result.size();
+            for (int i = 0; i < n; i++)
+            {
+                vector<int> temp = result[i];
+                temp.push_back(num);
+                result.push_back(temp);
+            }
         }
+        return result;
     }
 };
