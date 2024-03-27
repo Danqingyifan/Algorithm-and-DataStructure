@@ -14,11 +14,12 @@ public:
         for (int i = 0; i < nums.size(); i++)
         {
             int numberToFind = target - nums[i];
-            if (hash.find(numberToFind) != hash.end())
+            if (hash.count(numberToFind))
             {
                 return {hash[numberToFind], i};
             }
             hash[nums[i]] = i;
         }
+        return {};
     }
 };
