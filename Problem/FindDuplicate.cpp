@@ -5,7 +5,7 @@ class Solution
 public:
     // Fast and Slow Pointer
     // Regard array as circle,linked list cycle detection
-    int FindDuplicate(std::vector<int> &nums)
+    int findDuplicate(std::vector<int> &nums)
     {
         int slow = nums[0];
         int fast = nums[0];
